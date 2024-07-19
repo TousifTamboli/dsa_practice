@@ -1,6 +1,5 @@
 #include<iostream>
 #include<map>
-#include<string>
 
 using namespace std;
 
@@ -23,6 +22,11 @@ int main(){
         mpp[arr[i]]++;
     }
 
+    //iterate on the map
+    // for(auto it : mpp){
+    //     cout<< it.first<< "->"<<it.second<<endl;
+    // }
+
     int q;
     cout<<"Enter how many queries: "<<endl;
     cin >> q;
@@ -35,8 +39,6 @@ int main(){
         cout<<"The Number "<<number<<" appears "<<mpp[number]<<" times"<<endl;
     }
      
-    
-    
     
     return 0;
 }
