@@ -5,6 +5,7 @@ using namespace std;
 void bubble_sort(int nums[], int n){
     for (int i = n-1; i > 0; i--)
     {
+        int didSwap = 0;
         for (int j = 0; j < i; j++)
         {
             if (nums[j] > nums[j+1])
@@ -12,12 +13,17 @@ void bubble_sort(int nums[], int n){
                 int temp = nums[j+1];
                 nums[j+1] = nums[j];
                 nums[j] = temp;
+                didSwap = 1;
             }
             
         }
+        if (didSwap == 0)
+        {
+            break;
+        }
+        cout<<"runs\n";
         
     }
-    
     
 }
 
