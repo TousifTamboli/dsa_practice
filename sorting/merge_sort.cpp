@@ -50,6 +50,7 @@ void mergeSort(vector<int> &arr, int low, int high)
     if (low >= high)
         return; // base condition
     int mid = (low + high) / 2;
+    cout<<mid;
     mergeSort(arr, low, mid);      // left half
     mergeSort(arr, mid + 1, high); // right half
     merge(arr, low, mid, high);    // merge sorted halves
@@ -57,7 +58,7 @@ void mergeSort(vector<int> &arr, int low, int high)
 
 int main()
 {
-    vector<int> arr = {9, 4, 7, 6, 3, 1, 5};
+    vector<int> arr = {4, 6, 9, 1, 2, 3, 8};
     int n = 7;
 
     cout << "Before Sorting Array : " << endl;
