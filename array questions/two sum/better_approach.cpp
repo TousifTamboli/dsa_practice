@@ -13,7 +13,8 @@ vector<int> twoSum(vector<int>& nums, int target) {
         if (mpp.find(moreNeeded) != mpp.end()) {
             return {mpp[moreNeeded], i};
         }
-        mpp[num] = i;
+        mpp[num] = i; //If moreNeeded is not found in 
+        //the map, we add the current element num to the map with its index i
     }
     return {-1, -1};
 }
