@@ -1,9 +1,10 @@
 #include<iostream>
+#include<vector>
 
 using namespace std;
 
-void bubble_sort(int nums[], int n){
-    for (int i = n-1; i > 0; i--)
+void bubble_sort(vector<int>& nums){
+    for (int i = nums.size()-1; i > 0; i--)
     {
         int didSwap = 0;
         for (int j = 0; j < i; j++)
@@ -28,20 +29,14 @@ void bubble_sort(int nums[], int n){
 }
 
 int main(){
-    int n;
-    cout<<"Enter number of elements in numsay : ";
-    cin>>n;
-    int nums[n];
+    // int n;
+    // cout<<"Enter number of elements in numsay : ";
+    // cin>>n;
+    vector<int> nums = {2,0,2,1,1,0};
 
-    for (int i = 0; i < n; i++)
-    {
-        cout<<"Enter Element "<<i+1<<endl;
-        cin>>nums[i];
-    }
+    bubble_sort(nums);
 
-    bubble_sort(nums, n);
-
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < nums.size(); i++)
     {
         cout << nums[i] << " "; 
     }
