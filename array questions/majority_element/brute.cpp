@@ -1,24 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int majorityElement(vector<int> v) {
+int majorityElement(vector<int> nums) {
+    int count = 0;
+    int candidate = 0;
 
-    int n = v.size();
-    // cout<<n/2;
-
-    for (int i = 0; i < n; i++) {
-        int count = 0;
-        for (int j = 0; j < n; j++) {
-            if (v[j] == v[i]) {
-                count++;
-            }
+    for (int num : nums) {
+        if (count == 0) {
+            candidate = num;
         }
-
-        if (count > (n / 2))
-            return v[i];
+        count += (num == candidate) ? 1 : -1;
     }
 
-    return -1;
+    return candidate;
 }
 
 int main()
