@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int MajorityElement(vector<int>& nums){
+int majorityElement(vector<int>& nums){
     map<int, int> mpp;
 
         for (int i = 0; i < nums.size(); i++) {
@@ -20,7 +20,7 @@ int MajorityElement(vector<int>& nums){
 
 int main(){
     vector<int> nums = {2,2,1,1,1,2,2};
-    int ans = MajorityElement(nums);
+    int ans = majorityElement(nums);
     cout << "The majority element is: " << ans << endl;
     return 0;
 }
