@@ -8,15 +8,11 @@ int maximunSubarray(vector<int> &arr)
 
     for (int i = 0; i < arr.size(); i++)
     {
+        int sum = 0;
         for (int j = i; j < arr.size(); j++)
         {
-            int sum = 0;
 
-            for (int k = i; k <= j; k++)
-            {
-
-                sum += arr[k];
-            }
+            sum += arr[j];
 
             maxi = max(maxi, sum);
         }
