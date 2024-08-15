@@ -2,18 +2,18 @@
 
 using namespace std;
 
-int maximunSubarray(vector<int> &arr)
+int maximunSubarray(vector<int> &nums)
 {
     int maxi = INT_MIN;
 
-    for (int i = 0; i < arr.size(); i++)
+    for (int i = 0; i < nums.size(); i++)
     {
         int sum = 0;
 
-        for (int j = i; j < arr.size(); j++)
+        for (int j = i; j < nums.size(); j++)
         {
 
-            sum += arr[j];
+            sum += nums[j];
 
             maxi = max(maxi, sum);
         }
