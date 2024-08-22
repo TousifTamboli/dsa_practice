@@ -30,5 +30,5 @@ int main()
 
     int ans = pivotIndex(nums);
 
-    cout<<"Pivot index is : "<<ans<<endl
+    cout<<"Pivot index is : "<<ans<<endl;
 }
