@@ -36,5 +36,5 @@ int main(){
 
     int answer = mySqrt(x);
 
-    cout<<"The square root of " <<x<< "is "<<answer;
+    cout<<"The square root of " <<x<< " is "<<answer;
 }
