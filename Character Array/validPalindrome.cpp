@@ -26,18 +26,18 @@ char toLower(char ch)
 
 bool checkPalindrome(string a)
 {
-    int s = 0;
+    int start = 0;
     int e = a.length() - 1;
 
-    while (s <= e)
+    while (start <= e)
     {
-        if (a[s] != a[e])
+        if (a[start] != a[e])
         {
             return 0;
         }
         else
         {
-            s++;
+            start++;
             e--;
         }
     }
