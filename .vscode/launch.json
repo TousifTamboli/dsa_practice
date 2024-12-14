@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Tousif M Tamboli/Desktop/dsa/hashing",
-      "program": "c:/Users/Tousif M Tamboli/Desktop/dsa/hashing/build/Debug/outDebug",
+      "cwd": "c:/Users/Tousif M Tamboli/Downloads/dsa_practice/Character Array",
+      "program": "c:/Users/Tousif M Tamboli/Downloads/dsa_practice/Character Array/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
