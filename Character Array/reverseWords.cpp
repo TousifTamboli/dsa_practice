@@ -56,7 +56,7 @@ string TraverseString(string &s)
 int main()
 {
 
-    string s = "  hello world  ";
+    string s = "hello world";
 
     // Stores length of the string
     int n = s.length();
