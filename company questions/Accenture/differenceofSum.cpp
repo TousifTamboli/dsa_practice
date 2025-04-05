@@ -1,49 +1,41 @@
-// The function accepts an integers arr of size ’length’ as its arguments you are required to
-// return the sum of second largest largest element from the even positions and second smallest
-//  from the odd position of given ‘arr’.
+// The function def differenceofSum(n. m) accepts two integers n, m as arguments 
+// Find the sum of all numbers in range from 1 to m(both inclusive) that are not divisible by n. 
+// Return difference between sum of integers not divisible by n with sum of numbers divisible by n.
 
-#include <bits/stdc++.h>
+
+#include <iostream>
 using namespace std;
 
-int largeSmallSum(vector<int> &a) {
+int differenceofSum(int n, int m)
+{
+    int sumOfN = 0;
+    int sumOfM = 0;
 
-    int n = a.size();
-
-    if(n == 0) return 0;
-    if(n <= 3) return 0;
-
-    vector<int> even;
-    vector<int> odd;
-
-    for(int i=0; i<n; i++){
-        //even
-        if(i % 2 == 0){
-            even.push_back(a[i]);
+    for (int i = 1; i <= m; i++)
+    {
+        if (i % n == 0)
+        {
+            sumOfN += i;
         }
-        //odd
-        else{
-            odd.push_back(a[i]);
-        }
+        else
+            sumOfM += i;
     }
 
-    if(even.size() < 2 || odd.size() < 2) return -1;
+    int diff = sumOfM - sumOfN;
 
-    sort(even.begin(), even.end());
-    sort(odd.begin(), odd.end());
-
-    int ans = even[even.size()-2] + odd[1];
-
-    return ans;
-
-
+    return diff;
 }
 
 int main()
 {
-    // vector<int> a = {3, 2, 1, 7, 5, 4};
-    vector<int> a = {1, 8, 0, 2, 3, 5, 6};
+    int n = 3;
+    int m = 10;
 
-    int result = largeSmallSum(a);
+    int result;
+
+    // cin >> n >> m;
+
+    result = differenceofSum(n, m);
 
     cout << result;
     return 0;
