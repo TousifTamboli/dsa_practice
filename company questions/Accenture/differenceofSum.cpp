@@ -3,7 +3,7 @@
 // Return difference between sum of integers not divisible by n with sum of numbers divisible by n.
 
 
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int differenceofSum(int n, int m)

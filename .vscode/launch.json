@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Tousif M Tamboli/Downloads/dsa_practice/Character Array",
-      "program": "c:/Users/Tousif M Tamboli/Downloads/dsa_practice/Character Array/build/Debug/outDebug",
+      "cwd": "c:/Users/Tousif M Tamboli/Downloads/dsa_practice/company questions/Accenture",
+      "program": "c:/Users/Tousif M Tamboli/Downloads/dsa_practice/company questions/Accenture/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
